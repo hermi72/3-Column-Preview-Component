@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0%, 0%, 0.75);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0%, 0%, 0.75);
+    margin: 30px 0 30px 0;
+    color: hsl(0, 0%, 95%);
+    font-size: 45px;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: auto;
+}
+
+.card > * {
+    flex-basis: 100%;
+}
+
+.box {
+    padding: 45px 50px 40px 40px;
+    min-width: 350px;
+}
+
+.b1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+#p1 {
+    max-width: 220px;
+}
+
+.b2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#p2 {
+    max-width: 240px;
+}
+
+.b3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+#p3 {
+    max-width: 240px;
+}
+
+button {
+    margin-top: 120px;
+    padding: 15px 40px 15px 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .95em;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+    border: 3px solid ;
+    border-color: transparent;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: #fff solid 3px;
+    color: #fff;
+}
+
+.bt1 {
+    color:hsl(31, 77%, 52%);
+}
+
+.bt2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.bt3 {
+    color:hsl(179, 100%, 13%);
+}
+
+/*
+
+    ## Colors
+
+    ### Primary
+
+    Bright orange: hsl(31, 77%, 52%)
+    Dark cyan: hsl(184, 100%, 22%)
+    Very dark cyan: hsl(179, 100%, 13%)
+
+    ### Neutral
+
+    Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+    Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+
+*/
+
+footer {
+    width: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 430px) {
+
+
+    footer {
+        bottom: 0;
+    }
+
+    .card {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .box {
+        min-width: 0;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+}
